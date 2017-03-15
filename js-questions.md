@@ -13,3 +13,7 @@ function clickHandler (event) {
   }
 }
 ```
+
+2. ### Explain how `this` works in JavaScript
+The this reference evaluates the current execution context, for example if you run it in the global scope it will point to the global object (window in browsers) , if you excute it withing an object method it will refer to that object. You can also use the function method bind which you can specify the context. As well with methods like call and apply. 
+
