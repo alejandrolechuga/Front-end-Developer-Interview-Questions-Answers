@@ -32,16 +32,19 @@ The this reference evaluates the current execution context, for example if you r
    *undefined* is when you declare a variable but never assgined a value.  
    *null* is a value that expresses the lack of value, you can use it as placeholder.
    ### How would you go about checking for any of these states? 
-   ```javascript
+
+```javascript 
      // undeclared  and undefined 
     if ( typeof variable === 'undefined' ) {} 
     // check if is null
     if ( variable === nulll ) {}
-   ```
+```
+
  7. ### What is a closure, and how/why would you use one? 
    A clousure is when a function scope can be acccessed by another function , keeping variables in memory as long this function is referenceable. 
    How ? 
-  ```javascript 
+   
+```javascript 
       function increase(number) {
          return function () {
            return ++number;
