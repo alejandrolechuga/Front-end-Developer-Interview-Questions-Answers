@@ -17,3 +17,25 @@ function clickHandler (event) {
 2. ### Explain how `this` works in JavaScript
 The this reference evaluates the current execution context, for example if you run it in the global scope it will point to the global object (window in browsers) , if you excute it withing an object method it will refer to that object. You can also use the function method bind which you can specify the context. As well with methods like call and apply. 
 
+3. ### Explain how prototypal inheritance works
+- TODO - Object.create, function.bind
+
+4. ### What do you think of AMD vs CommonJS? 
+- TODO 
+
+5. ### Explain why the following doesn't work as an IIFE: function foo(){ }();.
+   ### What needs to be changed to properly make it an IIFE?
+   
+   
+6. ### What's the difference between a variable that is: null, undefined or undeclared?
+   *undeclared* is when you try to point to a variable that doens't exist or never was created and produces a fatal error.
+   *undefined* is when you declare a variable but never assgined a value.  
+   *null* is a value that expresses the lack of value, you can use it as placeholder.
+   ### How would you go about checking for any of these states? 
+   ```javascript
+     // undeclared  and undefined 
+    if ( typeof variable === 'undefined' ) {} 
+    // check if is null
+    if ( variable === nulll ) {}
+   ```
+  
