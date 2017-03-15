@@ -38,4 +38,18 @@ The this reference evaluates the current execution context, for example if you r
     // check if is null
     if ( variable === nulll ) {}
    ```
-  
+ 7. ##3 What is a closure, and how/why would you use one? 
+   A clousure is when a function scope can be acccessed by another function , keeping variables in memory as long this function is referenceable. 
+   How ? 
+  ```javascript 
+      function increase(number) {
+         return function () {
+           return ++number;
+         }
+      }
+      var increaseFive = increase(5); 
+      increaseFive() // => 6
+      increaseFive() // => 7 
+      increaseFive() // => 8
+    ```
+    Why? It can be useful to cache values, to make private variables , and you can use the module pattern for exposing just certain properties of your modules. 
