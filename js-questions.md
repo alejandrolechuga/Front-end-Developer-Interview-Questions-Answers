@@ -38,7 +38,7 @@ The this reference evaluates the current execution context, for example if you r
     // check if is null
     if ( variable === nulll ) {}
    ```
- 7. ##3 What is a closure, and how/why would you use one? 
+ 7. ### What is a closure, and how/why would you use one? 
    A clousure is when a function scope can be acccessed by another function , keeping variables in memory as long this function is referenceable. 
    How ? 
   ```javascript 
