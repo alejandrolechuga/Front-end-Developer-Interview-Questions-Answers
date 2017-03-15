@@ -51,5 +51,6 @@ The this reference evaluates the current execution context, for example if you r
       increaseFive() // => 6
       increaseFive() // => 7 
       increaseFive() // => 8
-    ```
+  ```
+
     Why? It can be useful to cache values, to make private variables , and you can use the module pattern for exposing just certain properties of your modules. 
